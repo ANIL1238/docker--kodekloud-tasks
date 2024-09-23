@@ -1,0 +1,49 @@
+Here’s the corrected and polished version of your instructions with emojis to enhance readability for your GitHub repository:
+
+---
+
+## 🚀 Nginx Container Deployment on Application Server 1
+
+The Nautilus DevOps team is conducting deployment tests, and we are required to deploy an `nginx` container on Application Server 1. Follow these steps to complete the task:
+
+### 📝 Step 1: Check Application Server 1 Login Details
+
+- Username: `tony`
+- IP Address: `172.16.238.10`
+- Password: `Ir0nM@n`
+
+### 🔐 Step 2: SSH into Application Server 1
+
+Open your terminal and connect to Application Server 1 by running the following command:
+
+```bash
+ssh tony@172.16.238.10
+```
+
+When prompted, enter the password:
+
+```bash
+Ir0nM@n
+```
+
+### 🛠️ Step 3: Deploy the Nginx Container
+
+Once logged in, run the following command to deploy an `nginx` container with the `alpine` tag. Make sure to run it with `sudo` for appropriate permissions:
+
+```bash
+sudo docker run -d --name nginx_1 nginx:alpine
+```
+
+### ⚙️ Step 4: Verify the Container is Running
+
+To ensure the container is in a running state, check the status with this command:
+
+```bash
+sudo docker ps
+```
+
+You should see the `nginx_1` container listed and running.
+
+---
+
+✅ **Note:** Always use `sudo` when running Docker commands to avoid permission issues.
