@@ -1,0 +1,48 @@
+Here’s the refined version of your task with the correct steps and some emojis for a polished GitHub entry:
+
+---
+
+## 🗑️ Deleting `kke-container` from Application Server 1
+
+One of the developers created a test container named `kke-container` on **App Server 1**. Since it was only for testing, it now needs to be removed. Follow the steps below to delete it:
+
+### 🔍 Step 1: Check for Running Containers
+
+First, verify that the `kke-container` is running by listing all containers:
+
+```bash
+sudo docker ps
+```
+
+Locate the `CONTAINER ID` of `kke-container`.
+
+### ⏸️ Step 2: Stop the Container
+
+Now, stop the container using the `CONTAINER ID` you found in the previous step:
+
+```bash
+sudo docker stop <CONTAINER_ID>
+```
+
+### 🗑️ Step 3: Remove the Container
+
+Once the container is stopped, remove it:
+
+```bash
+sudo docker rm <CONTAINER_ID>
+```
+
+### ✅ Final Step: Verify Removal
+
+To ensure the container has been deleted, you can run the following:
+
+```bash
+sudo docker ps -a
+```
+
+The `kke-container` should no longer appear in the list of containers.
+
+---
+
+**Note:** Always run Docker commands with `sudo` to avoid permission issues.
+
