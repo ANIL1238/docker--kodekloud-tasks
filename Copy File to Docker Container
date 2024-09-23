@@ -1,0 +1,32 @@
+Here’s a polished version of the task with a clear explanation and added emojis for readability:
+
+---
+
+## 🔒 Copy Encrypted File to `ubuntu_latest` Container
+
+The Nautilus DevOps team has confidential data on **App Server 1**. A container named `ubuntu_latest` is running on this server. We need to securely copy an encrypted file without modifying it.
+
+Follow the steps below to copy the file:
+
+### 📂 Step 1: Copy the Encrypted File
+
+Use the `docker cp` command to copy the encrypted file `/tmp/nautilus.txt.gpg` from the host machine to the `/home/` directory inside the `ubuntu_latest` container:
+
+```bash
+sudo docker cp /tmp/nautilus.txt.gpg ubuntu_latest:/home/
+```
+
+### 🔍 Step 2: Verify the File is Copied
+
+After copying the file, verify that it was successfully transferred and is located in the `/home/` directory inside the container by executing the following command:
+
+```bash
+sudo docker exec ubuntu_latest ls -ltr /home/
+```
+
+This will list the contents of the `/home/` directory to confirm the presence of `nautilus.txt.gpg`.
+
+---
+
+✅ **Note:** Ensure the file is not modified during the process by verifying file integrity before and after the operation.
+
