@@ -3,7 +3,6 @@ Here’s the refined version of your task with the correct steps and some emojis
 ---
 
 ## 🗑️ Deleting `kke-container` from Application Server 1
-
 One of the developers created a test container named `kke-container` on **App Server 1**. Since it was only for testing, it now needs to be removed. Follow the steps below to delete it:
 
 ### 🔍 Step 1: Check for Running Containers
